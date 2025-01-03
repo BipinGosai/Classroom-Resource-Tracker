@@ -93,9 +93,6 @@ body{
     width: 50%;
     z-index: 2;
 }
-.container.active .sign__in{
-    transform: translateX(100%);
-}
 .sign__up{
     left: 0;
     width: 50%;
@@ -178,4 +175,19 @@ body{
 }
 .container.active .toggle__right{
     transform: translateX(200%);
+}
+
+.container textarea{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline:none ;
+    height: 150px;
+}
+button:hover{
+    background: var(--primary-color-dark);
 }
