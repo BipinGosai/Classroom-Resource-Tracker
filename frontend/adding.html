@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="for-booking.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Classroom Resource Tracker</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a onclick="window.location.reload()"href="#">ClassroomRe<span>SourceTracker</span>.</a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a onclick = "window.location.reload()"href="main-page.html">Home</a></li>
+            <li><a onclick = "window.location.href = 'profile.html';"href="#">Profile</a></li>
+            <li><a onclick = "window.location.href = 'about_us.html';"href="#">About Us</a></li>
+            <li><a onclick = "window.location.href = 'contact.html';"href="#">Contact</a></li>
+        </ul>
+    <div class="nav__btns">
+        <button onclick = "window.location.href='index.html';"class="btn log__out">Log Out</button>
+    </div>
+</nav>
+<br><br>
+<h1> Add Resources </h1>
+    <p> Enter resource info.</p>
+    <p>Validate required fields.</p>
+    <p>Confirm successful addition.</p>
+<form>
+    <div class="adding" id="adding">
+        <label for="imageUpload"><h3>Upload the image of your Item:</h3></label>
+        <input type="file" id="imageUpload" name="image" accept="image/*">
+        <br><br>
+        <input type="text" placeholder="Item Name" required>
+        <input type="number" placeholder="Quantity" required min="1">
+        <input type="text" placeholder="Quality" list="quality" required>
+         <datalist id="quality">
+            <option value="Excellent"></option>
+            <option value="Good"></option>
+            <option value="Alright"></option>
+            <option value="Bad"></option>
+         </datalist><br>
+         <p>Extra Notes..?</p>
+         <textarea id="extra" name="extra" rows="3" cols="30" minlength="2" maxlength="100"></textarea>
+         <p> Are you sure about adding the resource?</p>
+        <input type="radio" name="booking" required>Yes
+        <input type="radio" name="booking" required onclick="window.location.href='main-page.html';">No<br>
+        <button type="button" onclick="window.location.href='book.html';">Add</button>
+    </div>
+</form>
+</body>
+</html>
