@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="forgot__pw.css">
+
+    <title>Recovery</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form__container sign__up">
+        </div>
+        <div class="form__container sign__in">
+            <form>
+                <h2>Input Code</h2>           
+                <input type="text" placeholder="6-digit code">
+                <button type="button" onclick="window.location.href = 'login.html';">Verify</button>
+            </form>
+        </div> 
+        <div class="toggle__container">
+            <div class="toggle">
+                <div class="toggle__panel toggle__right">
+                    <h1>Password Recovery</h1>
+                    <p>Please enter your 6-digit code to reset your password or regain access to your accountl  </p>
+                    <button onclick = "window.location.href = 'forgot__pw.html';"class = "hidden" id="register">Go Back</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script src = "login.js"></script>
+    
+</body>
+</html>
