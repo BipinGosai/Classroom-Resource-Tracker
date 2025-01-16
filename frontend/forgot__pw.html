@@ -20,10 +20,10 @@
         <div class="form__container sign__up">
         </div>
         <div class="form__container sign__in">
-            <form>
+            <form onsubmit="return data()" action  = "send__code.html">
                 <h2>Enter your Email</h2>           
-                <input type="text" placeholder="Email">
-                <button type="button" onclick="window.location.href = 'send__code.html';">Send Code</button>
+                <input type="text" placeholder="Email" id = "n1">
+                <button>Send Code</button>
             </form>
         </div> 
         <div class="toggle__container">
@@ -37,7 +37,8 @@
         </div> 
     </div>
 
-    <script src = "login.js"></script>
+    <script  src="forgot__pw.js">
+    </script>
     
 </body>
 </html>

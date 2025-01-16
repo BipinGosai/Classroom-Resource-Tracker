@@ -18,34 +18,24 @@
 
     <div class="container" id="container">
         <div class="form__container sign__up">
-            <form>
+            <form onsubmit="return data__signup()" action="login.html">
                 <h1>Create Account</h1>
-                <!-- <div class="social__icons">
-                    <a href="#" class = "icon"><i class='bx bxl-google' ></i></a>
-                    <a href="#" class = "icon"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class = "icon"><i class='bx bxl-github' ></i></a>
-                    <a href="#" class = "icon"><i class='bx bxl-linkedin' ></i></a> 
-                </div> -->
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
+            
+                <input type="text" placeholder="Name" id = "n3">
+                <input type="text" placeholder="Email" id = "n4">
+                <input type="password" placeholder="Password" id="n5">
+                <input type="password" placeholder="Confirm Password" id="n6">
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form__container sign__in">
-            <form>
+            <form onsubmit="return data__signin()" action="main-page.html">
                 <h1>Sign In</h1>
-                <!-- <div class="social__icons">
-                    <a href="#" class = "icon"><i class='bx bxl-google' ></i></a>
-                    <a href="#" class = "icon"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class = "icon"><i class='bx bxl-github' ></i></a>
-                    <a href="#" class = "icon"><i class='bx bxl-linkedin' ></i></a> 
-                </div> -->
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#">Forgot Your Password?</a>
-                <button type="button" onclick="window.location.href = 'main-page.html';">Sign In</button>
-
+               
+                <input type="text" placeholder="Email" id = "n1">
+                <input type="password" placeholder="Password" id = "n2">
+                <a  onclick = "window.location.href = 'forgot__pw.html';"href="#">Forgot Your Password?</a>
+                <button>Sign In</button>
             </form>
         </div> 
         <div class="toggle__container">
