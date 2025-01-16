@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="for-booking.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Classroom Resource Tracker</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a onclick="window.location.reload()"href="#">ClassroomRe<span>SourceTracker</span>.</a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a onclick = "window.location.reload()"href="main-page.html">Home</a></li>
+            <li><a onclick = "window.location.href = 'profile.html';"href="#">Profile</a></li>
+            <li><a onclick = "window.location.href = 'about_us.html';"href="#">About Us</a></li>
+            <li><a onclick = "window.location.href = 'contact.html';"href="#">Contact</a></li>
+        </ul>
+    <div class="nav__btns">
+        <button onclick = "window.location.href='index.html';"class="btn log__out">Log Out</button>
+    </div>
+</nav>
+<br><br>
+<form>
+    <div class="booking" id="booking">
+     
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Item Name" required>
+        <input type="number" placeholder="Quantity" min="1" required>
+        <br>
+        <input type="text" name="months" placeholder="Months" list="months" required>
+        <datalist id="months">
+            <option value="January"></option>
+            <option value="February"></option>
+            <option value="March"></option>
+            <option value="April"></option>
+            <option value="May"></option>
+            <option value="June"></option>
+            <option value="July"></option>
+            <option value="August"></option>
+            <option value="September"></option>
+            <option value="October"></option>
+            <option value="November"></option>
+            <option value="December"></option>
+        </datalist>
+        <input type="number" name="months" placeholder="Date" list="date" min="1" max="32" required><br>
+        <input type="number" placeholder="Time" min="1" max="12" required><span><input type="radio" name="ampm"required>AM<input type="radio" name="ampm" required>PM</span>
+        <p>TO</p>
+        <input type="number" placeholder="Time" min="1" max="12"><span><input type="radio" name="pmam" required>AM<input type="radio" name="pmam" required>PM</span>
+        <p>Do you confirm this <b>booking?</p></b></p>
+        <input type="radio" name="booking" required>Yes
+        <input type="radio" name="booking" onclick="window.location.href='main-page.html';" required>No<br>
+        <button type="button" onclick="window.location.href='booked.html';">Book</button>
+    </div>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+ <button type="button" onclick="openPopup()">Book</button>
+        <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p> The resource has been booked successfully.</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</form>
+<script>
+    let popup= document.getElementById("popup");
+    function openPopup(){
+        popup.add;
+    }
+    function closePopup(){
+        popup.remove;
+    }
+</script>
+-->

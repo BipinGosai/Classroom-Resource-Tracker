@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form__container sign__up">
+            <form id="signup-form">
+                <h1>Create Account</h1>
+                <input type="text" id="signup-name" placeholder="Name">
+                <input type="email" id="signup-email" placeholder="Email" >
+                <input type="password" id="signup-password" placeholder="Password">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form__container sign__in">
+            <form id="login-form">
+                <h1>Sign In</h1>
+                <input type="email" id="signin-email" placeholder="Email" required>
+                <input type="password" id="signin-password" placeholder="Password" required>
+                <a href="#">Forgot Your Password?</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle__container">
+            <div class="toggle">
+                <div class="toggle__panel toggle__left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter the required details to use all of the site features</p>
+                    <p>Already Have an Account?</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle__panel toggle__right">
+                    <h1>Welcome!</h1>
+                    <p>Register with the required details to use all of the site features</p>
+                    <p>Don't Have an Account?</p>
+                    <button class ="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
